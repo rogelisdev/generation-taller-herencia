@@ -17,29 +17,36 @@ class Empleados {
     }
 
     desactivar() {
-        if (this.activo === true) {
-            this.activo = false
-            console.log(`El empleado ${this.nombre} su estado es : ${this.activo}`)
-        } else {
-            console.log(`El empleado ${this.nombre} su estado es : ${this.activo}`)
-        }
-
+        this.activo = !this.activo;
+        console.log(`El empleado ${this.nombre} ahora está: ${this.activo}`);
     }
 
-    info(){
-        console.log(`Datos del trabajador:\n
-        NOMBRE: ${this.nombre}, \n
-        SALARIO: ${this.salario}, \n
-        CARGO: ${this.cargo}, \n
-        ESTADO: ${this.activo}`) 
+    info() {
+        console.log(`Datos del trabajador:
+            NOMBRE: ${this.nombre},
+            SALARIO: ${this.salario},
+            CARGO: ${this.cargo},
+            ESTADO: ${this.activo}`);
     }
 
 }
 
 
-const empleado = new Empleados("Mario", "Albañil", 1200, true);
+let empleado1 = new Empleados("Mario", "Albañil", 1200, true);
+let empleado2 = new Empleados("Francisco", "Medico", 9500, true);
+let empleado3 = new Empleados("Karla", "Modelo", 1750, false);
 
-empleado.presentarse()
-empleado.calcularSalarioAnual()
-empleado.desactivar()
-empleado.info()
+empleado1.presentarse()
+empleado1.calcularSalarioAnual()
+empleado1.desactivar()
+empleado1.info()
+
+empleado2.presentarse()
+empleado2.calcularSalarioAnual()
+empleado2.desactivar()
+empleado2.info()
+
+empleado3.presentarse()
+empleado3.calcularSalarioAnual()
+empleado3.desactivar()
+empleado3.info()
