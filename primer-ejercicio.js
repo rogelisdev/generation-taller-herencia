@@ -1,4 +1,4 @@
-class Empleados {
+export class Empleados {
     constructor(nombre, cargo, salario, activo = true) {
         this.nombre = nombre;
         this.cargo = cargo;
