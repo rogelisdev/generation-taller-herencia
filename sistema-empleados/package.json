@@ -1,0 +1,21 @@
+{
+  "name": "taller-herencia",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "primer-clase-extendida.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogelisdev/generation-taller-herencia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogelisdev/generation-taller-herencia/issues"
+  },
+  "homepage": "https://github.com/rogelisdev/generation-taller-herencia#readme"
+}
